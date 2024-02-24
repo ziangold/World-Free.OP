@@ -99,47 +99,54 @@ body {
 }
 
 
-	/* HOME PAGE */
+    /* HOME PAGE */
 
-#menu-tile, #specials-tile, #map-tile{
-	height: 250px;
-	width: 100%;
-	margin-bottom: 15px;
-	position: relative;
-	border: 2px solid #360b35;
-	overflow: hidden;
+.menu-item-tile{
+    margin-bottom: 25px;
+}
+.menu-item-tile .menu-item-price{
+    font-size: 1.1em;
+    text-align: right;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+    font-size: .6em;
+}
+.menu-item-photo {
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow:hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}   
+.menu-item-photo div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+.menu-item-description {
+    padding-right: 30px;
+}
+h3.menu-item-tile{
+    margin: 0 0 10px;
+}
+.menu-item-details{
+    font-size: .9em;
+    font-style: italic;
+}
+section.row{
+    padding-top: 50px;
 }
 
 
-#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
-	box-shadow: 0 1px 5px 1px #cccccc;
-}
-
-#menu-tile{
-	background: url('https://media.istockphoto.com/id/1457979959/photo/snack-junk-fast-food-on-table-in-restaurant-soup-sauce-ornament-grill-hamburger-french-fries.webp?b=1&s=170667a&w=0&k=20&c=A_MdmsSdkTspk9Mum_bDVB2ko0RKoyjB7ZXQUnSOHl0=') no-repeat;
-	background-position: center;
-}
-#specials-tile{
-	background: url('https://img.freepik.com/premium-photo/close-up-exquisite-serving-special-dish-from-chef-black-board_713163-1390.jpg') no-repeat;
-	background-position: center;
-}
-#menu-tile span, #specials-tile span, #map-tile span{
-	position: absolute;
-	bottom: 0px;
-	right: 0px;
-	width: 100%;
-	text-align: center;
-	font-size: 1.6em;
-	text-transform: uppercase;
-	background-color: #000; 
-	color: #fff;
-	opacity: .8;
-	margin: 0px;
-	border: 0px;
-	padding: 0px;
-	}
-
-	/*Home page*/
+    /*Home page*/
 
 	/*Footer*/
 
@@ -191,6 +198,10 @@ div.row {
 	.container .jumbotron {
 	    box-shadow: 0 0 50px #3f0c1f;
     	border: 2px solid #3f0c1f;
+    }
+    h3.menu-item-tile{
+    margin: 0 0 10px;
+    width: 298px;
     }
 }
 
@@ -299,7 +310,17 @@ div.row {
 	.panel-footer section hr {
 		width: 50%;
 	}
-	
+
+    .menu-item-tile .menu-item-price{
+    text-align: center;
+    }
+    .menu-item-photo {
+    margin-right: auto;
+    } 
+    .menu-item-description {
+    text-align: center;
+    padding-top: 25px;
+}
 }
 
 
@@ -313,4 +334,12 @@ div.row {
 		padding-top: 5px;
 		font-size: 6vw;
 	}
-
+    .col-xxs-12{
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 100%;
+    }
+}
