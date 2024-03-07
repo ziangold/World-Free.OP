@@ -133,3 +133,98 @@
 // }
 
 
+// for (var firstNum = 0; firstNum < 2; firstNum++) {
+//     for (var secondNum = 0; secondNum < 10; secondNum++) {
+//         console.log(firstNum + ", " + secondNum);
+//     }
+// }
+
+
+// //nested loops - one inside another 
+// for (var i = 100; i > 10; i = i - 10) {
+//     for (var j = 10; j > 4; j = j - 5) {
+//         console.log(i + " divided by " + j + " equals " + i / j);
+//     }
+// }
+
+
+// var cubes = 'ABCDEFG';
+// //styling console output using CSS with a %c format specifier
+// for (var i = 0; i < cubes.length; i++) {
+//     var styles = "font-size: 40px; border-radius: 10px; border: 1px solid blue; background: pink; color: purple";
+//     console.log("%c" + cubes[i], styles)
+// }
+
+
+// var cubes = 'ABCDEFG';
+// //styling console output using CSS with a %c format specifier
+// for (var i = 0; i < 7; i++) {
+//     var styles = "font-size: 40px; border-radius: 10px; border: 1px solid blue; background: pink; color: purple";
+//     console.log(i + " = %c" + cubes[i], styles)
+// }
+
+
+
+// for (var i = 1; i < 11; i++) {
+//         var place = i;
+//         switch(place){
+//             case 1:
+//                 console.log('Gold');
+//                 break;
+//             case 2:
+//                 console.log('Silver');
+//                 break;
+//             case 3:
+//                 console.log('Bronze');
+//                 break;
+//             default:
+//                 console.log(i);
+//         }
+// }
+
+
+// for (var i = 1; i < 11; i++) {
+//     var place = i;
+
+//     if(place == 1){
+//         console.log('Gold')
+//     } 
+//     else if(place == 2){
+//         console.log('Silver')
+//     }
+//     else if(place == 3){
+//         console.log('Bronze')
+//     }
+//     else{
+//         console.log(i)
+//     }
+// }
+
+
+// function listArrayItems(arr) {
+//     for (var i = 0; i < arr.length; i++) {
+//         console.log(i+1 , arr[i] , '=') //display the array item where the index is euqal to i
+//         if (arr[i] == 'yellow') {
+//             console.log(i*100, "tomato!")
+//         } else {
+//             console.log(i*100, arr[i])
+//         }
+//     }
+// }
+// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink'];
+// listArrayItems(colors); //display all items in the array at once
+
+
+function letterFinder(word, match, letter) {
+    for(var i = 0; i < word.length; i++){
+        var match = word[i]
+        if(match[i] == letter) {
+            //check if the current characater, word[i], is equal to the match
+            console.log('Found the', word, 'at', match ,'letter', z)
+        } else {
+            console.log('---No match found at', z)
+        }
+    }
+}
+var word = ['zain', 'ali', 'ahmad', 'sibtain']
+letterFinder(word,match,z)
