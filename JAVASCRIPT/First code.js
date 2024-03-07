@@ -215,16 +215,49 @@
 // listArrayItems(colors); //display all items in the array at once
 
 
-function letterFinder(word, match, letter) {
-    for(var i = 0; i < word.length; i++){
-        var match = word[i]
-        if(match[i] == letter) {
-            //check if the current characater, word[i], is equal to the match
-            console.log('Found the', word, 'at', match ,'letter', z)
-        } else {
-            console.log('---No match found at', z)
-        }
-    }
-}
-var word = ['zain', 'ali', 'ahmad', 'sibtain']
-letterFinder(word,match,z)
+// function letterFinder(words, letter) {
+//     for (var i = 0; i < words.length; i++) {
+//         for (var j = 0; j < words[i].length; j++) {
+//         if (words[i][j] === letter) {
+//             console.log(`This letter '${letter}' found in '${words[i]}' at position '${j}'`);
+//         }
+//         }
+//     }
+//     }
+
+//     var words = ['zain', 'ali', 'ahmad', 'sibtain'];
+//     var letter = 'a';
+//     letterFinder(words, letter);
+
+
+// function letterFinder(words, letter) {
+//         for (var i = 0; i < words.length; i++) {
+            
+//             if (words[i].toLowerCase() === letter.toLowerCase()) {
+//                 console.log(`This letter '${letter}' found in '${words}' at position '${i}'`);
+//                 }
+//             }
+//         }
+    
+//         var words = 'Zain is a very beautiful person';
+//         var letter = 'z';
+//         letterFinder(words, letter);
+
+
+// function letterFinder(words, letter) {
+//     if(!Array.isArray(words)){
+//         words = words.split(' ')
+//     }
+//     for (var i = 0; i < words.length; i++) {
+//         for (var j = 0; j < words[i].length; j++) {
+//         if (words[i][j] === letter) {
+//             console.log(`This letter '${letter}' found in '${words[i]}' at position '${j}'`);
+//         }
+//         }
+//     }
+// }
+// var words = 'Zain is a very beautiful person.';
+// var letter = 'a';
+// letterFinder(words, letter);
+
+
